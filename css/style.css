@@ -4,7 +4,7 @@
 }
 
 :root {
-    --main-color: rgb(63, 143, 56);
+    --main-color: rgb(255, 6, 6);
 }
 
 * {
@@ -109,4 +109,4 @@ body {
         border-left: solid 0.5px var(--main-color);
         opacity: 0.4; }
     .line-container .line-opacity {
-        opacity: 0.05; }
+        opacity: 0.15; }
