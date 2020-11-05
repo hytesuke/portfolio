@@ -12,12 +12,8 @@ colors.forEach((color) => {
             // Add active color
             color.classList.add('active');
 
-            const color_name = color.style['background-color']
-            // Add color to localstorage
-            window.localStorage.setItem('active-color', color_name);
-
             // Add color to body div
-            document.documentElement.style.setProperty('--primary-color', color_name);
+            document.documentElement.style.setProperty('--primary-color', color.style['background-color']);
         }
     })
 })
