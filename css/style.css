@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Coolvetica';
-    src: url('/font/Coolvetica.ttf') format('truetype'); 
+    src: url('../font/Coolvetica.ttf') format('truetype'); 
 }
 
 :root {
