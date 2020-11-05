@@ -4,7 +4,7 @@
 }
 
 :root {
-    --main-color: rgb(255, 6, 6);
+    --main-color: aqua;
 }
 
 * {
@@ -44,6 +44,7 @@ body {
 
 .sect-landing .container {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     max-width: 80vw;
     height: 100vh;
@@ -51,23 +52,34 @@ body {
 }
 
 .sect-landing .container .left {
-    margin: 0px 30px; }
+    margin: 0px 30px;
+    text-align: center; }
     .sect-landing .container .left h1 {
-        font-size: 6em;
+        font-size: 7em;
         color: white;
-        text-shadow: 0px 0px 10px white; }
+        text-shadow: 0px 0px 7px white; }
         .sect-landing .container .left h1 .pseudo {
             color: var(--main-color);
-            text-shadow: 0px 0px 10px var(--main-color); }
+            text-shadow: 0px 0px 7px var(--main-color); }
     .sect-landing .container .left .subtitle {
         font-size: 2em;
-        color: white;
-        text-align: center; }
+        color: white; }
     .sect-landing .container .left .quote {
         font-size: 16px;
         color: #D1D1D1;
         opacity: 0.61; }
 
+.sect-landing .container .right {
+    position: relative;
+    text-align: right;
+    right: 0px; }
+    .sect-landing .container .right .circle {
+        shape-outside: circle();
+        clip-path: circle();
+        background-color: var(--main-color);
+        height: 500px;
+        width: 500px;
+    }
 /* Menu Left */
 
 .menu-left {
@@ -92,10 +104,28 @@ body {
     width: 10vw;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--main-color); }
-    .aside-right>h1 {
-        font-size: 26px;
-    }
+    text-align: center;
+    font-size: 12px; }
+    .aside-right .aside-color .colors {
+        display: flex;
+        flex-wrap: wrap;
+        width: 8vw;
+        margin: auto;
+        align-self: center;
+        justify-content: center; }
+        .aside-right .aside-color .colors .color {
+            height: 30px;
+            width: 30px;
+            border-radius: 5px;
+            margin: 6px;
+            opacity: 0.3; }
+        .aside-right .aside-color .colors .color:hover {
+            transition-duration: 0.35s;
+            opacity: 1; }
+            .aside-right .aside-color .colors .color.active {
+                opacity: 1;
+                box-shadow: 0px 0px 7px white;
+            }
 
 .line-container {
     position: fixed;
@@ -107,6 +137,6 @@ body {
     .line-container .line {
         height: 100%;
         border-left: solid 0.5px var(--main-color);
-        opacity: 0.4; }
+        opacity: 0.3; }
     .line-container .line-opacity {
-        opacity: 0.15; }
+        opacity: 0.08; }
